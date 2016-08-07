@@ -1,0 +1,3 @@
+default=http://api.goeuro.com/api/v2/position/suggest/en/{0}
+google=https://www.google.co.in/
+malformedurl=ddddddddddddddddddd

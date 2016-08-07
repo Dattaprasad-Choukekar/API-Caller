@@ -1,0 +1,18 @@
+{
+  "_id": 379727,
+  "key": null,
+  "name": "Paris",
+  "fullName": "Paris, France",
+  "iata_airport_code": null,
+  "type": "location",
+  "country": "France",
+  "locationId": 11914,
+  "inEurope": true,
+  "countryCode": "FR",
+  "coreCountry": true,
+  "distance": null,
+  "geo_position": {
+    "latitude": 48.85341,
+    "longitude": 2.3488
+  }
+}
