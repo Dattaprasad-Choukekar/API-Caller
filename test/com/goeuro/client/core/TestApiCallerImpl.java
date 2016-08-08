@@ -57,10 +57,29 @@ public class TestApiCallerImpl {
         String response = null;
         try {
             ApiCaller c = new ApiCallerImpl(u.getFile());
-            response = c.callApi(ApiCaller.DEFUALT, new Object[]{"Berlin"});
+            response = c.callApi(ApiCaller.DEFUALT, null);
         } catch (MalformedURLException ex) {
             return;
         }
         Assert.assertTrue(response!= null && !response.isEmpty());
     }
+
+  @Test()
+  public void test_replace_placeholder_in_url() {
+    URL u = getClass().getResource("TestApiCallerImpl_valid_config_file");
+    String response = null;
+    try {
+      ApiCaller c = new ApiCallerImpl(u.getFile());
+      response = c.callApi(ApiCaller.DEFUALT, new Object[]{"en", "Berlin"});
+    } catch (MalformedURLException ex) {
+      return;
+    }
+    Assert.assertTrue(response!= null && !response.isEmpty());
+    Assert.assertTrue (response.contains ("{\"_id\":376217,\"key\":null,\"name\":\"Berlin\",\"fullName\":\"Berlin, Germany\"," +
+      "\"iata_airport_code\":null,\"type\":\"location\",\"country\":\"Germany\",\"geo_position\":{\"latitude\":52.52437,\"longitude\":13.41053}," +
+      "\"locationId\":8384,\"inEurope\":true,\"countryId\":56,\"countryCode\":\"DE\",\"coreCountry\":true,\"distance\":null,\"names\":" +
+      "{\"pt\":\"Berlim\",\"ru\":\"Берлин\",\"it\":\"Berlino\",\"is\":\"Berlín\"" +
+      ",\"fi\":\"Berliini\",\"es\":\"Berlín\",\"zh\":\"柏林\",\"cs\":\"Berlín\",\"ca\":\"Berlín\"," +
+      "\"nl\":\"Berlijn\"},\"alternativeNames\":{}}"));
+  }
 }

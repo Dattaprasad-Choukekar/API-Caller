@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  */
 public class ApiCallerImpl implements ApiCaller{
 
-    private final Logger logger = Logger.getLogger(ApiCallerImpl.class.getName());
+    private static final Logger logger = Logger.getLogger(ApiCallerImpl.class.getName());
 
     private Properties urlConfig;
 
@@ -76,6 +76,7 @@ public class ApiCallerImpl implements ApiCaller{
     public static String getGetResponse(String urlToRead) throws IOException {
         StringBuilder result = new StringBuilder();
         URL url = new URL(urlToRead);
+        logger.log(Level.FINE, "URL Get:" + url.toString ());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
         BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
