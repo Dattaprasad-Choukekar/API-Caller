@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Export-Package: org.apache.commons.lang3.event;version="3.1",org.apach
+ e.commons.lang3.mutable;version="3.1",org.apache.commons.lang3.tuple;
+ version="3.1",org.apache.commons.lang3.time;version="3.1",org.apache.
+ commons.lang3.concurrent;version="3.1",org.apache.commons.lang3.text.
+ translate;version="3.1",org.apache.commons.lang3.text;version="3.1",o
+ rg.apache.commons.lang3.math;version="3.1",org.apache.commons.lang3;v
+ ersion="3.1",org.apache.commons.lang3.exception;version="3.1",org.apa
+ che.commons.lang3.reflect;version="3.1",org.apache.commons.lang3.buil
+ der;version="3.1"
+Private-Package: templates
+Implementation-Title: Commons Lang
+Built-By: hen
+Tool: Bnd-1.15.0
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Specification-Title: Commons Lang
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.commons.lang3
+X-Compile-Target-JDK: 1.5
+Implementation-Version: 3.1
+Specification-Vendor: The Apache Software Foundation
+Bundle-Name: Commons Lang
+Created-By: Apache Maven Bundle Plugin
+X-Compile-Source-JDK: 1.5
+Bundle-Vendor: The Apache Software Foundation
+Build-Jdk: 1.5.0_22
+Bundle-Version: 3.1.0
+Bnd-LastModified: 1320908300777
+Bundle-ManifestVersion: 2
+Bundle-Description: Commons Lang, a package of Java utility classes fo
+ r the  classes that are in java.lang's hierarchy, or are considered t
+ o be so  standard as to justify existence in java.lang.
+Implementation-Build: UNKNOWN_BRANCH@r??????; 2011-11-09 22:58:07-0800
+Specification-Version: 3.1
+Include-Resource: templates/release-notes.vm=src/main/resources/templa
+ tes/release-notes.vm,META-INF/LICENSE.txt=LICENSE.txt,META-INF/NOTICE
+ .txt=NOTICE.txt
+Bundle-DocURL: http://commons.apache.org/lang/
+Archiver-Version: Plexus Archiver
+Main-Class: com.goeuro.client.application.GoEuroClientApp
+
+

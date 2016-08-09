@@ -39,6 +39,7 @@ public class GoEuroClientApp {
     try {
       new GoEuroClientApp ().execute (args);
     } catch (Exception t) {
+      t.printStackTrace ();
       logger.log (Level.SEVERE, t.getMessage ());
       throw t;
     }
@@ -51,7 +52,7 @@ public class GoEuroClientApp {
       fh.setFormatter (new SimpleFormatter ());
       global.addHandler (fh);
       global.setLevel (Level.WARNING);
-      global.setUseParentHandlers(false);
+      global.setUseParentHandlers(true);
     } catch (IOException e) {
       throw new GoEuroAppException("Error while configuring");
     }
@@ -70,7 +71,8 @@ public class GoEuroClientApp {
       throw new GoEuroAppException ("go_euro_client_app.properties not found on classpath");
     }
 
-    ApiCaller caller = new ApiCallerImpl (config.getFile ());
+    ApiCaller caller = new ApiCallerImpl (config.getPath ());
+    System.out.println ("qqqqqqqq" + config.getPath ());
     String result = null;
     CityLocation[] locations = null;
     try {
