@@ -58,7 +58,7 @@ public class GoEuroClientApp {
 
 
     if (args == null || args.length == 0 || args[0] == null || args[0].isEmpty ()) {
-      throw new IllegalArgumentException ("Please provide city name as argument : java -jar GoEuroTest.jar \"CITY_NAME\""); //TODO GOod help message
+      throw new IllegalArgumentException ("Please provide city name as argument : java -jar GoEuroTest.jar \"CITY_NAME\"");
     }
 
     String cityName = args[0];
@@ -74,7 +74,7 @@ public class GoEuroClientApp {
     String result = null;
     CityLocation[] locations = null;
     try {
-      result = caller.callApi (ApiCaller.DEFUALT, new Object[] { cityName }); // TODO locale is fixed for the moment
+      result = caller.callApi (ApiCaller.DEFUALT, new Object[] { cityName });
       logger.log (Level.FINE, result);
 
       // Parse
