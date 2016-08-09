@@ -39,5 +39,5 @@ Include-Resource: templates/release-notes.vm=src/main/resources/templa
 Bundle-DocURL: http://commons.apache.org/lang/
 Archiver-Version: Plexus Archiver
 Main-Class: com.goeuro.client.application.GoEuroClientApp
-
+Class-Path: .
 

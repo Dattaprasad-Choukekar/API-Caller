@@ -7,15 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c7879fd-5e4b-4904-bec3-4c32ce629455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/GoEuroTest_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/go_euro_client_app.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/client/application/ApplicationTest.java" afterPath="$PROJECT_DIR$/src/test/java/client/application/ApplicationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/go_euro_client_app.properties" afterPath="$PROJECT_DIR$/src/test/resources/go_euro_client_app.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="GoEuroTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,38 +31,7 @@
     <favorites_list name="GoEuroTest" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/client/application/ApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoEuroClientApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -238,7 +201,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,10 +224,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -736,13 +695,17 @@
       <option name="project" value="LOCAL" />
       <updated>1470749772472</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <created>1470754926365</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1470754926365</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTest_test_app_(1) - 2016.08.09 at 16h 44m 23s.xml">
-      <configuration name="ApplicationTest.test_app (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApplicationTest_test_app_(1) - 2016.08.09 at 16h 44m 59s.xml">
       <configuration name="ApplicationTest.test_app (1)" configurationId="JUnit" />
     </history-entry>
@@ -765,6 +728,9 @@
       <configuration name="ApplicationTest.test_app (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ApplicationTest_test_app_(1) - 2016.08.09 at 16h 57m 43s.xml">
+      <configuration name="ApplicationTest.test_app (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTest_test_app_(1) - 2016.08.09 at 17h 03m 50s.xml">
       <configuration name="ApplicationTest.test_app (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ApplicationTest_test_app_invalid_input_args_null - 2016.08.09 at 16h 56m 43s.xml">
@@ -869,18 +835,6 @@
           <line>33</line>
           <properties />
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="30" />
@@ -1279,18 +1233,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="249">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+        <state relative-caret-position="458">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="13" />
           <folding />
         </state>
       </provider>

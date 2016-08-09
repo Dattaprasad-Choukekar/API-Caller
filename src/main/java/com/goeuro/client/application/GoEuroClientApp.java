@@ -65,14 +65,13 @@ public class GoEuroClientApp {
     String cityName = args[0];
 
     URL config = GoEuroClientApp.class.getClassLoader ()
-      .getResource ("go_euro_client_app.properties");
+      .getResource ("./go_euro_client_app.properties");
 
     if (config == null) {
       throw new GoEuroAppException ("go_euro_client_app.properties not found on classpath");
     }
 
     ApiCaller caller = new ApiCallerImpl (config.getPath ());
-    System.out.println ("qqqqqqqq" + config.getPath ());
     String result = null;
     CityLocation[] locations = null;
     try {
