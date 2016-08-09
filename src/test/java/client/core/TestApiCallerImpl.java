@@ -1,11 +1,13 @@
-package com.goeuro.client.core;
-
-import com.goeuro.client.exception.GoEuroAppException;
-import org.junit.Assert;
-import org.junit.Test;
+package client.core;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import com.goeuro.client.core.ApiCaller;
+import com.goeuro.client.core.ApiCallerImpl;
+import com.goeuro.client.exception.GoEuroAppException;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * Created by datta on 07/08/2016.

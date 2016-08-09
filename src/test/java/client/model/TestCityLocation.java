@@ -1,16 +1,20 @@
-package com.goeuro.client.model;
+package client.model;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+
+import com.goeuro.client.model.CityLocation;
+import com.goeuro.client.model.GeoPosition;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.stream.JsonReader;
 import org.apache.commons.io.IOUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 /**
  * Created by datta on 07/08/2016.
