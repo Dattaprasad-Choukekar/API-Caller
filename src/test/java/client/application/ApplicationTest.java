@@ -17,19 +17,19 @@ public class ApplicationTest {
   @Test(expected = IllegalArgumentException.class)
   public void test_app_invalid_input_args_null() {
     GoEuroClientApp app = new GoEuroClientApp ();
-    app.main (null);
+    app.execute (null);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void test_app_invalid_input_args_zero() {
     GoEuroClientApp app = new GoEuroClientApp ();
-    app.main (new String[1]);
+    app.execute (new String[1]);
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void test_app_invalid_input_args_emty() {
     GoEuroClientApp app = new GoEuroClientApp ();
-    app.main (new String[]{""});
+    app.execute (new String[]{""});
   }
 
   @Test()

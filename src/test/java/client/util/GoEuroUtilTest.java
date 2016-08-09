@@ -47,7 +47,7 @@ public class GoEuroUtilTest {
 
   @Test
   public void test_convert_to_csv() throws NoSuchFieldException, IllegalAccessException {
-    List<Object> c = new ArrayList<Object> ();
+    List<CityLocation> c = new ArrayList<CityLocation> ();
     c.add (location);
     String r =  GoEuroUtil.convertToCsv (c, new String[]{"name", "fullName"});
     Assert.assertTrue (r != null && !r.isEmpty ());
@@ -56,7 +56,7 @@ public class GoEuroUtilTest {
 
   @Test
   public void test_convert_to_csv_multiple_objects() throws NoSuchFieldException, IllegalAccessException {
-    List<Object> c = new ArrayList<Object> ();
+    List<CityLocation> c = new ArrayList<CityLocation> ();
     c.add (location);
     c.add (location);
     c.add (location);
@@ -70,7 +70,7 @@ public class GoEuroUtilTest {
 
   @Test(expected = NoSuchFieldException.class)
   public void test_convert_to_csv_unexpected_field() throws NoSuchFieldException, IllegalAccessException {
-    List<Object> c = new ArrayList<Object> ();
+    List<CityLocation> c = new ArrayList<CityLocation> ();
     c.add (location);
     c.add (location);
     c.add (location);
