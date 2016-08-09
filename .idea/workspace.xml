@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c7879fd-5e4b-4904-bec3-4c32ce629455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_kie_modules_org_apache_commons_lang3_6_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/client/application/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/client/util/GoEuroUtilTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/go_euro_client_app.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoEuroTest/com/goeuro/client/core/ApiCaller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoEuroTest/com/goeuro/client/core/ApiCallerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoEuroTest/com/goeuro/client/exception/GoEuroAppException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoEuroTest/com/goeuro/client/model/CityLocation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoEuroTest/com/goeuro/client/model/GeoPosition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/GoEuroTest/com/goeuro/client/core/TestApiCallerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/GoEuroTest/com/goeuro/client/core/TestApiCallerImpl_test_no_default_url_in_config_file" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/GoEuroTest/com/goeuro/client/core/TestApiCallerImpl_valid_config_file" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/GoEuroTest/com/goeuro/client/model/TestCityLocation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/GoEuroTest/com/goeuro/client/model/TestCityLocation_test_dejsonify_city_location" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/GoEuroTest/com/goeuro/client/model/TestCityLocation_test_jsonify_city_location" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goeuro/client/core/ApiCaller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goeuro/client/core/ApiCallerImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goeuro/client/exception/GoEuroAppException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goeuro/client/model/CityLocation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goeuro/client/model/GeoPosition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/goeuro/client/util/GoEuroUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/util/GoEuroUtilTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/core/TestApiCallerImpl.java" afterPath="$PROJECT_DIR$/src/test/java/client/core/TestApiCallerImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/core/TestApiCallerImpl_test_no_default_url_in_config_file" afterPath="$PROJECT_DIR$/src/test/java/client/core/TestApiCallerImpl_test_no_default_url_in_config_file" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/core/TestApiCallerImpl_valid_config_file" afterPath="$PROJECT_DIR$/src/test/java/client/core/TestApiCallerImpl_valid_config_file" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/model/TestCityLocation.java" afterPath="$PROJECT_DIR$/src/test/java/client/model/TestCityLocation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/model/TestCityLocation_test_dejsonify_city_location" afterPath="$PROJECT_DIR$/src/test/java/client/model/TestCityLocation_test_dejsonify_city_location" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/com/goeuro/client/model/TestCityLocation_test_jsonify_city_location" afterPath="$PROJECT_DIR$/src/test/java/client/model/TestCityLocation_test_jsonify_city_location" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/application/GoEuroClientApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/core/ApiCallerImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/exception/GoEuroAppException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/model/CityLocation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/model/GeoPosition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/goeuro/client/util/GoEuroUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoEuroTest.iml" afterPath="$PROJECT_DIR$/GoEuroTest.iml" />
     </list>
     <ignored path="GoEuroTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -892,7 +866,21 @@
       <option name="project" value="LOCAL" />
       <updated>1470668849961</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1470740069535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1470740069535</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit">
+      <created>1470740100500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1470740100500</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
