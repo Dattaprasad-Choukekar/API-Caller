@@ -1,5 +1,6 @@
 package com.goeuro.client.application;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
@@ -46,6 +47,8 @@ public class GoEuroClientApp {
   }
 
   public void execute (String args[]) {
+
+    // Setup Logging
     try {
       Logger global= LogManager.getLogManager().getLogger("");
       FileHandler fh = new FileHandler ("go_euro_client_api.log");
@@ -57,13 +60,13 @@ public class GoEuroClientApp {
       throw new GoEuroAppException("Error while configuring");
     }
 
-
+    // Validate input
     if (args == null || args.length == 0 || args[0] == null || args[0].isEmpty ()) {
       throw new IllegalArgumentException ("Please provide city name as argument : java -jar GoEuroTest.jar \"CITY_NAME\"");
     }
 
     String cityName = args[0];
-
+    System.out.println ("City Name :" + cityName);
     /*URL config = GoEuroClientApp.class.getClassLoader ()
       .getResource ("./go_euro_client_app.properties");
 
@@ -76,10 +79,15 @@ public class GoEuroClientApp {
     String result = null;
     CityLocation[] locations = null;
     try {
+      // Get API result
       result = caller.callApi (ApiCaller.DEFUALT, new Object[] { cityName });
-      logger.log (Level.FINE, result);
 
-      // Parse
+      if (result.isEmpty () || result.equals ("[]")) {
+        System.out.println ("Empty result. Nothing to write.");
+        return;
+      }
+      logger.log (Level.FINE, result);
+      // Parse result
       try {
         locations = GoEuroUtil.dejsonizeCityLocatoinArray (result);
       } catch (JsonSyntaxException ex) {
@@ -94,15 +102,18 @@ public class GoEuroClientApp {
         throw new GoEuroAppException ("Error while converting api response to csv.", e);
       }
 
-
+      String op = OUTPUT_FILE_NAME_FORMAT.format (new Date ());
+      File opF = new File (op);
       try {
-        FileWriter w = new FileWriter (OUTPUT_FILE_NAME_FORMAT.format (new Date ()));
+        FileWriter w = new FileWriter (opF);
         w.append (csv);
         w.flush ();
         w.close ();
       } catch (IOException e) {
         throw new GoEuroAppException ("Error while writting output to csv file", e);
       }
+
+      System.out.println ("Output csv location: " + opF);
 
     } catch (MalformedURLException e) {
       throw new GoEuroAppException ("Invalid url configured in go_euro_client_app.properties ", e);

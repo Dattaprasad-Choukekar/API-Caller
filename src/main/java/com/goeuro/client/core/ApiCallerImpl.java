@@ -63,7 +63,7 @@ public class ApiCallerImpl implements ApiCaller{
 
         String formattedUrl = MessageFormat.format(urlStr, params);
         logger.log(Level.FINE, "Formatted URL" + formattedUrl);
-
+        System.out.println (formattedUrl);
         String response = null;
         try {
             response = getGetResponse(formattedUrl);
