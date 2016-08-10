@@ -45,6 +45,14 @@ public class ApiCallerImpl implements ApiCaller{
         gson = builder.create();
     };
 
+    public ApiCallerImpl(String key, String url) {
+        urlConfig =new Properties();
+        urlConfig.put (key, url);
+        builder = new GsonBuilder();
+        builder.setPrettyPrinting().serializeNulls();
+        gson = builder.create();
+    };
+
     @Override
     public String callApi(String name, Object[] params) throws MalformedURLException {
         String urlStr = urlConfig.getProperty(name);
