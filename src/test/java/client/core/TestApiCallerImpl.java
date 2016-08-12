@@ -25,7 +25,7 @@ public class TestApiCallerImpl {
         URL u = getClass().getResource("TestApiCallerImpl_valid_config_file");
         ApiCaller c = new ApiCallerImpl(u.getFile());
         Assert.assertEquals("http://api.goeuro.com/api/v2/position/suggest/en/Berlin",
-                c.getApi(ApiCaller.DEFUALT));
+                c.getApiByName (ApiCaller.DEFUALT));
     }
 
     @Test(expected=GoEuroAppException.class)
